@@ -5,6 +5,9 @@
     "target": "ES2023",
     "strict": true,
     "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
     "ignoreDeprecations": "6.0"
   }
 }

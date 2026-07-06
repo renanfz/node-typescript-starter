@@ -1,15 +1,12 @@
-
-import fastify from "fastify";
-import {mainRoutes} from "../routes/main.js"
+import fastify from 'fastify'
+import mainRoutes from '../routes/main.js'
 
 const app = fastify()
+const port = 3000
 
 app.register(mainRoutes)
 
-
-
-
-app.listen({ port: 3000 }).then(() => {
-     console.log('HTTP server running! ')
+app.listen({ port }).then(() => {
+     console.log('HTTP server running!')
 })
 
