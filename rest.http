@@ -8,17 +8,17 @@ POST {{baseUrl}}/register
 Content-Type: application/json
 
 {
-  "id": 4,
-  "nome": "Maria",
-  "curso": "engenharia"
+  "nome": "Kaina",
+  "curso": "ADS",
+  "ra": 112912780
 }
 
 ### Atualizar curso de um usuário
-PATCH {{baseUrl}}/users/7
+PATCH {{baseUrl}}/users/3
 Content-Type: application/json
 
 {
-  "curso": "investigadora"
+  "nome": "deives"
 }
 
 ### Remover um usuário

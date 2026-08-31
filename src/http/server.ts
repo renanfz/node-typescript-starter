@@ -1,8 +1,14 @@
-import fastify from 'fastify'
+import Fastify from 'fastify'
 import mainRoutes from '../routes/main.js'
+import cors from '@fastify/cors';
 
-const app = fastify()
+const app = Fastify();
 const port = 3000
+
+await app.register(cors, {
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+})
 
 app.register(mainRoutes)
 
