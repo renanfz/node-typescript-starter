@@ -1,25 +1,25 @@
 @baseUrl = http://localhost:3000
 
 ### Buscar todos os usuários
-GET {{baseUrl}}/hello
+GET {{baseUrl}}/users
 
 ### Cadastrar um novo usuário
 POST {{baseUrl}}/register
 Content-Type: application/json
 
 {
-  "nome": "Kaina",
-  "curso": "ADS",
-  "ra": 112912780
+  "nome": "rey fennix",
+  "curso": "Eng de Software",
+  "ra": 1180011
 }
 
 ### Atualizar curso de um usuário
-PATCH {{baseUrl}}/users/3
+PATCH {{baseUrl}}/users/16
 Content-Type: application/json
 
 {
-  "nome": "deives"
+  "ra": 112611900
 }
 
 ### Remover um usuário
-DELETE {{baseUrl}}/users/2
+DELETE {{baseUrl}}/users/
